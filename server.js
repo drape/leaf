@@ -1,27 +1,22 @@
-var koa = require('koa');
+var express = require('express');
 var path = require('path');
-var render = require('koa-ejs');
+var routes = require('./routes');
 
-var app = koa();
+var app = express();
 
-var filters = {
-  format: function (time) {
-    return time.getFullYear() + '-' + (time.getMonth() + 1) + '-' + time.getDate();
-  }
-};
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
-render(app, {
-	root: path.join(__dirname, 'view'),
-	layout: 'template',
-	viewExt: 'html',
-	cache: false,
-	debut: true,
-	filters: filters
+app.get('/', routes.index);
+
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.get('*', function(req, res) {
+  res.render('badroute', {
+    title: 'Bad route'
+  });
 });
 
-app.use(function *() {
-	yield this.render('user');
+app.listen(3000, function() {
+    console.log('Now listening on port: 3000')
 });
-
-app.listen(3000);
-console.log('Running on port 3000');

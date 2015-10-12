@@ -5,8 +5,7 @@
   "main": "server.js",
   "dependencies": {
     "ejs": "^2.3.4",
-    "koa": "^1.1.0",
-    "koa-ejs": "^2.0.1"
+    "express": "^4.13.3"
   },
   "devDependencies": {},
   "scripts": {
