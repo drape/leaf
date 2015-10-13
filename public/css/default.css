@@ -15,9 +15,41 @@ header {
   z-index: 99;
 }
 
+header nav {
+  position: relative;
+  left: 160px;
+  top: 15px;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 7px 14px;
+  background: transparent;
+  border-radius: 3px;
+  margin-left: 10px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: .85em;
+  color: white;
+}
+
+header nav ul li a:hover {
+  color: whitesmoke;
+}
+
+.slider {
+  width: 100%;
+  height: 1px;
+  background: transparent;
+}
+
 div.container {
   position: relative;
-  top: 70px;
+  top: 150px;
 }
 
 div.container h1 {
@@ -28,11 +60,118 @@ div.container h1 {
 }
 
 .lander {
-  background: #333;
+  background: #40C0CB;
   width: 100%;
-  height: 400px;
+  height: 90vh;
 }
 
 .background-color {
-  background: #333;
+  background: #40C0CB;
+}
+
+form {
+   background: transparent;
+   padding: 3px;
+   position: fixed;
+   top: 92vh;
+   width: 100%;
+   margin-left: 60px;
+}
+
+form input {
+   border: 0;
+   padding: 10px;
+   width: 50%;
+   margin-right: 5%;
+   border: 1px solid rgba(1,1,1,.1);
+   border-radius: 3px;
+}
+
+form input:focus {
+  border: 1px solid rgba(1,1,1,.2);
+}
+
+form input:active {
+  border: 1px solid rgba(1,1,1,.2);
+  box-shadow: none;
+}
+
+form button {
+   width: 9%;
+   background: rgb(130, 224, 255);
+   border: none;
+   padding: 10px;
+}
+
+#messages {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#messages li {
+  padding: 5px 10px;
+}
+
+#messages li:nth-child(odd) {
+  background: #eee;
+}
+textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"]{
+
+-webkit-box-sizing: border-box;
+
+-moz-box-sizing: border-box;
+
+box-sizing: border-box;
+
+-webkit-background-clip: padding;
+
+-moz-background-clip: padding;
+
+background-clip:padding-box;
+
+-webkit-border-radius:0;
+
+-moz-border-radius:0;
+
+-ms-border-radius:0;
+
+-o-border-radius:0;
+
+border-radius:0;
+
+-webkit-appearance:none;
+
+background-color:#fff;
+
+color:#000;
+
+outline:0;
+
+margin:0;
+
+padding:0;
+
+text-align: left;
+
+font-size:1em;
+
+height: 1em;
+
+vertical-align: middle;
+
+}
+
+select, select, select{
+
+background:#fff url(data:image/png;base64,R0lGODlhDQAEAIAAAAAAAP8A/yH5BAEHAAEALAAAAAANAAQAAAILhA+hG5jMDpxvhgIAOw==);
+
+background-repeat: no-repeat;
+
+background-position: 97% center;
+
+padding:0 25px 0 8px;
+
+font-size: .875em
+
 }

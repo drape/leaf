@@ -5,12 +5,15 @@
   </head>
 
 <body>
-  <header>
-  </header>
+  <% include partials/pages/header.ejs %>
   <div class="lander">
   <div class="container">
   <h1><%= header1 %></h1>
 </div>
+<ul id="messages"></ul>
+<form action="">
+  <input id="m" autocomplete="off" />
+</form>
 </div>
 
   <% include partials/pages/js.ejs %>
