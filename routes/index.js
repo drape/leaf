@@ -1,5 +1,6 @@
 exports.index = function(req, res) {
 	res.render('default', {
-		title: 'The Cove'
+		title: 'Leaf',
+		header1: 'Welcome, welcome to Project Leaf'
 	});
 }

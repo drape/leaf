@@ -1,0 +1,38 @@
+/*
+CSS for default.ejs file
+*/
+
+body {
+  background: white;
+  height: 3000px;
+}
+
+header {
+  position: fixed;
+  background: transparent;
+  height: 70px;
+  width: 100%;
+  z-index: 99;
+}
+
+div.container {
+  position: relative;
+  top: 70px;
+}
+
+div.container h1 {
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  color: white
+}
+
+.lander {
+  background: #333;
+  width: 100%;
+  height: 400px;
+}
+
+.background-color {
+  background: #333;
+}
