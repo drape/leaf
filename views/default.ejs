@@ -6,14 +6,23 @@
 
 <body>
   <% include partials/pages/header.ejs %>
+
+  <div class="face-icon">
+    <i class="fa fa-user"></i>
+  </div>
+
   <div class="lander">
   <div class="container">
-  <h1><%= header1 %></h1>
+    <div class="column one-half">
+      <h1><%= header1 %></h1>
+      <p class="landing-p">Yoro ipsum dolor praal amet, consectetur adipiscing elit. Drehlaan eu vestibulum dinaak.</p>
+      <a href="#" class="landing-button">gå til prosjekter</a>
+    </div>
+    <div class="column one-half">
+      <form>
+      </form>
+    </div>
 </div>
-<ul id="messages"></ul>
-<form action="">
-  <input id="m" autocomplete="off" />
-</form>
 </div>
 
   <% include partials/pages/js.ejs %>

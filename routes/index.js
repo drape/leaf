@@ -1,6 +1,6 @@
 exports.index = function(req, res) {
 	res.render('default', {
-		title: 'Leaf',
-		header1: 'Welcome, welcome to Project Leaf'
+		title: 'Dennis Malmin',
+		header1: 'Velkommen!'
 	});
 }
