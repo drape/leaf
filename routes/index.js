@@ -1,6 +1,6 @@
 exports.index = function(req, res) {
 	res.render('default', {
-		title: 'Dennis Malmin',
+		title: 'WIP',
 		header1: 'Velkommen!'
 	});
 }

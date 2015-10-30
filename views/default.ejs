@@ -8,22 +8,16 @@
   <% include partials/pages/header.ejs %>
 
   <div class="face-icon">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-circle-o menu-open-button"></i>
   </div>
 
-  <div class="lander">
-  <div class="container">
-    <div class="column one-half">
-      <h1><%= header1 %></h1>
-      <p class="landing-p">Yoro ipsum dolor praal amet, consectetur adipiscing elit. Drehlaan eu vestibulum dinaak.</p>
-      <a href="#" class="landing-button">gå til prosjekter</a>
-    </div>
-    <div class="column one-half">
-      <form>
-      </form>
-    </div>
-</div>
-</div>
+  <% include partials/pages/menu.ejs %>
+
+  <% include partials/pages/lander.ejs %>
+
+  <div class="showcase-container">
+    <div class="container">
+  </div>
 
   <% include partials/pages/js.ejs %>
 </body>

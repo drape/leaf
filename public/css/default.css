@@ -6,6 +6,7 @@ body {
   background: white;
   height: 3000px;
   font-weight: 500;
+  z-index: 1;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -44,7 +45,7 @@ header nav ul li a {
   letter-spacing: -.5px;
   text-decoration: none;
   text-align: center;
-  font-size: .9em;
+  font-size: .95em;
   color: #383940;
   text-transform: uppercase;
 }
@@ -74,9 +75,9 @@ header nav ul li a:hover {
   background: #F55654;
 }
 
-div.container {
+div.lander .container {
   position: relative;
-  top: 130px;
+  top: 140px;
 }
 
 h1 {
@@ -95,6 +96,7 @@ p.landing-p {
 }
 
 a.landing-button {
+  opacity: .6;
   position: relative;
   top: 80px;
   text-decoration: none;
@@ -107,6 +109,11 @@ a.landing-button {
   padding: 6px 15px;
   border-radius: 60px;
   background: white;
+  transition: opacity .3s;
+}
+
+a.landing-button:hover {
+  opacity: 1;
 }
 
 i.icon {
@@ -120,10 +127,7 @@ i.icon {
   background: white;
   width: 100%;
   height: 90vh;
-}
-
-.one-half {
-  background: transparent;
+  border-bottom: 4px solid rgba(1,1,1,.02);
 }
 
 div.face-icon {
@@ -132,10 +136,133 @@ div.face-icon {
   right: 2%;
   bottom: 15px;
   cursor: pointer;
+  z-index: 99;
 }
 
 div.face-icon i {
   font-weight: 300;
   color: #383940;
+  font-size: 1.1em;
+}
+
+div.menu-container {
+  width: 300px;
+  height: 70vh;
+  position: fixed;
+  float: right;
+  border-top-left-radius: 3px;
+  right: 0px;
+  bottom: -71vh;
+  background: #383940;
+  z-index: 99;
+}
+
+.profile-photo {
+  position: relative;
+  top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 8px solid rgba(255,255,255,.05);
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+}
+
+div.menu-container h4 {
+  position: relative;
+  top: 40px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.4em;
+  font-weight: 700;
+  color: whitesmoke;
+  letter-spacing: -2px;
+}
+
+div.menu-container p {
+  position: relative;
+  top: 30px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: -1px;
+  font-size: .9em;
+  color: whitesmoke;
+}
+
+div.menu-container .menu-display {
+  position: relative;
+  top: 40px;
+}
+
+div.menu-container .menu-display .one-half {
+  width: 50%;
+  background: rgba(255,255,255,.05);
+  text-align: center;
+  padding: 0;
+  height: 75px;
+  margin: 0 auto;
+}
+
+div.menu-container .menu-display .one-half:last-of-type {
+  border-left: 1px solid rgba(1,1,1,.1);
+}
+
+div.menu-container .menu-display .one-half p {
+  position: relative;
+  top: 15px;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+}
+
+div.menu-container .menu-display .one-half h5 {
+  position: relative;
+  top: -5px;
+  font-size: .85em;
+  color: #888;
+  font-weight: 700;
+}
+
+.menu-close-button {
+  position: absolute;
+  top: 10px;
+  float: right;
+  font-size: 1.3em;
+  right: 10px;
+  color: #555;
+  cursor: pointer;
+}
+
+.menu-close-button:hover {
+  color: #777;
+}
+
+.menu-button {
+  position: relative;
+  top: 105px;
+  text-align: center;
+  left: 21%;
+  padding: 10px 40px;
+  background: transparent;
+  border: 2px solid #F55654;
+  font-weight: 700;
+  border-radius: 60px;
+  text-decoration: none;
+  color: #F55654;
+  transition: opacity .4s;
+}
+
+.menu-button:hover {
+  color: #F55654;
+  opacity: 1;
+}
+
+/*
+===========================================*/
+
+div.showcase-container {
+  position: relative;
+  background: rgba(1,1,1,.02);
+  height: 500px
 }
