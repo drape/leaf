@@ -32,6 +32,13 @@ $(document).ready( function() {
     }, 300);
   });
 
+  //
+  if ( $(document).scrollTop() >= 500) {
+      $('header').css({
+        'borderBottom': '4px solid rgba(1,1,1,.02)'
+      });
+  }
+
 
   // Menu script
   var menuflag = 0;

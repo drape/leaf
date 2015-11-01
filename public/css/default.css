@@ -36,7 +36,7 @@ header nav.login-form {
 header nav ul li {
   display: inline-block;
   background: transparent;
-  margin-right: 18px;
+  margin-right: 22px;
 }
 
 header nav ul li a {
@@ -84,7 +84,7 @@ h1 {
   font-size: 3.5em;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-align: left;
   color: #383940;
 }
@@ -126,6 +126,7 @@ i.icon {
 .lander {
   background: white;
   width: 100%;
+  background-size: cover;
   height: 90vh;
   border-bottom: 4px solid rgba(1,1,1,.02);
 }
@@ -150,7 +151,7 @@ div.menu-container {
   height: 70vh;
   position: fixed;
   float: right;
-  border-top-left-radius: 3px;
+  border-top-left-radius: 6px;
   right: 0px;
   bottom: -71vh;
   background: #383940;
@@ -175,7 +176,7 @@ div.menu-container h4 {
   text-align: center;
   font-family: 'Open Sans', sans-serif;
   font-size: 1.4em;
-  font-weight: 700;
+  font-weight: 500;
   color: whitesmoke;
   letter-spacing: -2px;
 }
@@ -242,8 +243,8 @@ div.menu-container .menu-display .one-half h5 {
   position: relative;
   top: 105px;
   text-align: center;
-  left: 21%;
-  padding: 10px 40px;
+  left: 30%;
+  padding: 10px 15px;
   background: transparent;
   border: 2px solid #F55654;
   font-weight: 700;
@@ -258,11 +259,35 @@ div.menu-container .menu-display .one-half h5 {
   opacity: 1;
 }
 
+.message-me {
+  font-weight: 500;
+  letter-spacing: 0px;
+  color: #383940;
+}
+
+form {
+  position: relative;
+  text-align: left;
+}
+
+form input {
+  width: 40%;
+  border: 0px solid #383940;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  letter-spacing: -1px;
+  color: #444;
+}
+
+form input:hover {
+  border: 0px solid #383940;
+}
+
 /*
 ===========================================*/
 
 div.showcase-container {
   position: relative;
   background: rgba(1,1,1,.02);
-  height: 500px
+  height: 250px
 }

@@ -1,6 +1,6 @@
 exports.index = function(req, res) {
 	res.render('default', {
 		title: 'WIP',
-		header1: 'Velkommen!'
+		header1: 'Welcome'
 	});
 }
